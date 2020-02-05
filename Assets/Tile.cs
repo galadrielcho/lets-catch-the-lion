@@ -9,7 +9,9 @@ public class Tile : MonoBehaviour
     public int owner;
     private GameManagerScript manager = gameobjectformanager.GetComponent<GameManagerScript>(); // The script name is the variable type ? 
     public Tuple<int,int> coordinates;
-    public float speed = 1.0F;
+    public Vector2 newlocation;
+    public animal;
+    public position;
 
 
     void Start()
@@ -24,12 +26,13 @@ public class Tile : MonoBehaviour
     {
         turn = manager.turn;
         if (turn == owner){
-            StartCoroutine("move");
+            StartCoroutine("getNewLocation");
         }
     }
 
     IEnumerator move()
     {
+        float speed = 1.0F;
         newlocation = new Vector2(manager.getNewLocation(position, animal, owner));
         while (transform.position != newlocation) {
             float step = speed * Time.deltaTime;
