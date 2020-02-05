@@ -24,7 +24,7 @@ public class Tile : MonoBehaviour
     {
         turn = manager.turn;
         if (turn == owner){
-            StarCoroutine("move");
+            StartCoroutine("move");
         }
     }
 
