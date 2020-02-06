@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    public GameObject = GameManager;
     public int ownersetup;
     public int tiletype;
     public int owner;
-    private GameManager manager = gameobjectformanager.GetComponent<GameManagerScript>(); // The script name is the variable type ? 
-    public Tuple<int,int> coordinates;
+    private manager = GameManager.GetComponent<GameManager>();
     public Vector2 newlocation;
     public int animal;
     public int position;
@@ -16,15 +16,15 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-        owner = ownersetup;
-        animal = tiletype;
-        position = row_column;
+        int owner = ownersetup;
+        int animal = tiletype;
+        int position = row_column;
 
     }
 
     void click()
     {
-        turn = manager.turn;
+        int turn = manager.turn;
         if (turn == owner){
             StartCoroutine("getNewLocation");
         }
