@@ -7,11 +7,11 @@ public class Tile : MonoBehaviour
     public int ownersetup;
     public int tiletype;
     public int owner;
-    private GameManagerScript manager = gameobjectformanager.GetComponent<GameManagerScript>(); // The script name is the variable type ? 
+    private GameManager manager = gameobjectformanager.GetComponent<GameManagerScript>(); // The script name is the variable type ? 
     public Tuple<int,int> coordinates;
     public Vector2 newlocation;
-    public animal;
-    public position;
+    public int animal;
+    public int position;
 
 
     void Start()

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int[,] array = new int[3, 4] { { 1, 2 }, { 3, 4 }, { 5, 6 }};
+    private GameObject[,] tiles = new GameObject[3, 4];
+
+
     // Start is called before the first frame update
     void Start()
     {
