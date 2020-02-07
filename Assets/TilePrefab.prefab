@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7027726140988544309}
   - component: {fileID: 2477646928780852803}
+  - component: {fileID: 8884412715508461604}
   m_Layer: 0
   m_Name: TilePrefab
   m_TagString: Untagged
@@ -81,3 +82,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8884412715508461604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471626096225530183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f602aac10bba4b954ade7ea8ef3f4984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
+  ownersetup: 0
+  tiletype: 0
+  owner: 0
+  newlocation: {x: 0, y: 0}
+  animal: 0
