@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public GameObject GameManager;
     public int ownersetup;
     public int tiletype;
     public int owner;   
@@ -17,6 +16,8 @@ public class Tile : MonoBehaviour
     {
         int owner = ownersetup;
         int animal = tiletype;
+        GameObject GameManager = GameObject.Find("GameManager");
+
         ManagerScript = GameManager.GetComponent<GameManagerScript>();
 
 
