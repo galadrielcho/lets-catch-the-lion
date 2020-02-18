@@ -48,7 +48,7 @@ public class GameManagerScript : MonoBehaviour
 
             }
 
-            tile.transform.Rotate(0, 0, 90 * (1 + 2 * owner));
+            // tile.transform.Rotate(0, 0, 90 * (1 + 2 * owner));
             tile.transform.localScale = new Vector3(.9f, .9f, .9f);
 
             board[i + subtract, column] = tile;
@@ -74,10 +74,12 @@ public class GameManagerScript : MonoBehaviour
             Tile tileScript = chick.GetComponent<Tile>();
 
             tileScript.owner = x;
-
+            Debug.Log(x);
+            
             chick.GetComponent<Image>().sprite = sprites[3];
 
-            chick.transform.Rotate(0, 0, 90 * (1 + 2 * owner));
+            Debug.Log(tileScript.owner);
+            chick.transform.Rotate(0, 0, -90 + (tileScript.owner + 2 * tileScript.owner));
             chick.transform.localScale = new Vector3(.9f, .9f, .9f);
 
 
@@ -86,7 +88,7 @@ public class GameManagerScript : MonoBehaviour
         }
 
     }
-
+     
 
    void  getNewLocation(object[] tileAttributes)
     {
