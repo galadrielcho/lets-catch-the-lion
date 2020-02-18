@@ -48,7 +48,7 @@ public class GameManagerScript : MonoBehaviour
 
             }
 
-            // tile.transform.Rotate(0, 0, 90 * (1 + 2 * owner));
+            tile.transform.Rotate(0, 0, -90  + (180 * tileScript.owner));
             tile.transform.localScale = new Vector3(.9f, .9f, .9f);
 
             board[i + subtract, column] = tile;
@@ -79,7 +79,8 @@ public class GameManagerScript : MonoBehaviour
             chick.GetComponent<Image>().sprite = sprites[3];
 
             Debug.Log(tileScript.owner);
-            chick.transform.Rotate(0, 0, -90 + (tileScript.owner + 2 * tileScript.owner));
+
+            chick.transform.Rotate(0, 0, -90  + (180 * tileScript.owner));
             chick.transform.localScale = new Vector3(.9f, .9f, .9f);
 
 
