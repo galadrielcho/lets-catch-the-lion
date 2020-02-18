@@ -92,10 +92,10 @@ public class GameManagerScript : MonoBehaviour
     {
         Vector2 tileposition = (Vector2)tileAttributes[0];
 
-        int animal = tileAttributes[1];
-        int owner = tileAttributes[2];
-        int currentrow = tileposition[0];
-        int currentcolumn = tileposition[1];
+        int animal = (int)tileAttributes[1];
+        int owner = (int)tileAttributes[2];
+        int currentrow = (int)tileposition[0];
+        int currentcolumn = (int)tileposition[1];
 
         List<Vector2> possiblePositions = new List<Vector2>();
 
@@ -155,5 +155,7 @@ public class GameManagerScript : MonoBehaviour
                 possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
             }
         }
+        yield return null;
+
     }
 }
