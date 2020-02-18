@@ -17,7 +17,6 @@ public class Tile : MonoBehaviour
         int owner = ownersetup;
         int animal = tiletype;
         GameObject GameManager = GameObject.Find("GameManager");
-
         ManagerScript = GameManager.GetComponent<GameManagerScript>();
 
 
@@ -25,7 +24,7 @@ public class Tile : MonoBehaviour
 
     void click()
     {
-        int turn = ManagerScript.turn;
+        int turn = GameManagerScript.turn;
         if (turn == owner){
             StartCoroutine("getNewLocation");
         }
