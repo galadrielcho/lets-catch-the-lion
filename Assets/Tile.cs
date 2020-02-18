@@ -31,16 +31,7 @@ public class Tile : MonoBehaviour
         }
     }
 
-    // IEnumerator move()
-    // {
-    //     float speed = 1.0F;
-    //     newlocation = new Vector2(ManagerScript.getNewLocation(position, animal, owner));
-    //     while (transform.position != newlocation) {
-    //         float step = speed * Time.deltaTime;
-    //         transform.position = Vector2.MoveTowards(transform.position, newlocation, step);
-    //         yield return null;
-    //     }
-    // }
+
 
 
 
