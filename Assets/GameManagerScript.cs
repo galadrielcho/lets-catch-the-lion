@@ -88,7 +88,7 @@ public class GameManagerScript : MonoBehaviour
     }
 
 
-    IEnumerator getNewLocation(object[] tileAttributes)
+   void  getNewLocation(object[] tileAttributes)
     {
         Vector2 tileposition = (Vector2)tileAttributes[0];
 
@@ -126,36 +126,48 @@ public class GameManagerScript : MonoBehaviour
                 possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
             }
 
-            else if (animal == 3)
-            {
-                // elephant
-                possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
-                possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 2));
-                possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
-                possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 2));
-            }
-            else if (animal == 4)
-            {
-                // giraffe
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-                possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-                possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
-            }
-            else if (animal == 5)
-            {
-                // chicken
-
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-                possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-                possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
-                // diagonal directions	
-                possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
-                possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
-            }
+        else if (animal == 3)
+        {
+            // elephant
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 2));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 2));
         }
-        yield return null;
+        else if (animal == 4)
+        {
+            // giraffe
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+        }
+        else if (animal == 5)
+        {
+            // chicken
 
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            // diagonal directions	
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
+        }
+            int length = possiblePositions.Count;
+            int n = 0;
+
+        while (n < length)
+           {
+                Vector2 temp = possiblePositions[n];
+                if (temp[0] < 0 || temp[0] > 2 || temp[1] < 0 || temp[2] > 3)
+                {
+                    possiblePositions.RemoveAt(n);
+                    length--;
+                }
+                n++;
+            }
     }
+
+}
 }
