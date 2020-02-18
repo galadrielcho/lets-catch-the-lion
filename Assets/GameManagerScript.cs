@@ -18,7 +18,7 @@ public class GameManagerScript : MonoBehaviour
 
     void Awake()
     {
-        int xcoord = -150;
+        float xcoord = -150f;
         int column = 0;
         int owner = 0;
         int subtract = 0;
@@ -27,7 +27,7 @@ public class GameManagerScript : MonoBehaviour
         {
             GameObject tile = Instantiate(tilePrefab);
 
-            tile.transform.position = new Vector3(xcoord, 100 - 100 * (i + subtract), 15);
+            tile.transform.position = new Vector3(xcoord, 100f - 100f * (i + subtract), 15f);
 
             tile.transform.SetParent(canvas.transform, false);
             Tile tileScript = tile.GetComponent<Tile>();
@@ -57,7 +57,7 @@ public class GameManagerScript : MonoBehaviour
             board[i + subtract, column] = tile;
             if (i == 2)
             {
-                xcoord = 150;
+                xcoord = 150f;
                 column = 3;
                 owner = 1;
                 subtract = -3;
@@ -68,7 +68,7 @@ public class GameManagerScript : MonoBehaviour
         for (int x = 0; x < 2; x++)
         {
             GameObject chick = Instantiate(tilePrefab);
-            chick.transform.position = new Vector3(-50 + 100 * x, 0, 0);
+            chick.transform.position = new Vector3(-50f + 100 * x, 0f, 0f);
 
             chick.transform.SetParent(canvas.transform, false);
 
@@ -77,7 +77,6 @@ public class GameManagerScript : MonoBehaviour
             Tile tileScript = chick.GetComponent<Tile>();
 
             tileScript.owner = x;
-            Debug.Log(x);
             
             chick.GetComponent<Image>().sprite = sprites[3];
 
@@ -178,13 +177,22 @@ public class GameManagerScript : MonoBehaviour
 
 }
 
-    // IEnumerator chooseCircle() {
+    IEnumerator chooseCircle() {
 
-    //     foreach (Vector2 possibility in possiblePositions) {
-    //        GameObject circle = Instanstiate(circlePrefab);
+        List<GameObject> circles;
 
-    //        circle.transform.position = (possibility.x, possibility.y, 20);
-    //        circle.SetParent(board[possibility.x, possibility.y].transform, false);
-    //     }
-    // }
+        foreach (Vector2 possibility in possiblePositions) {
+           GameObject circle = Instantiate(circlePrefab);
+
+           circle.transform.position = new Vector3(possibility.x, possibility.y, 20);
+           circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);
+        }
+
+        yield return new WaitForSeconds(5f);
+        // while (!wasClicked) {
+        //     yield return null;
+        // }
+
+
+    }
 }
