@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject tilePrefab;
+    public GameObject circlePrefab;
     public GameObject canvas;
     private bool repeat = true;
     private GameObject[,] board = new GameObject[3, 4];
     public Sprite[] sprites;
     public static int turn = 0;
+
+    private List<Vector2> possiblePositions;
 
 
     void Awake()
@@ -89,9 +92,10 @@ public class GameManagerScript : MonoBehaviour
         }
 
     }
-     
 
-   void  getNewLocation(object[] tileAttributes)
+    
+    
+    void  getNewLocation(object[] tileAttributes)
     {
         Vector2 tileposition = (Vector2)tileAttributes[0];
 
@@ -163,7 +167,7 @@ public class GameManagerScript : MonoBehaviour
         while (n < length)
            {
                 Vector2 temp = possiblePositions[n];
-                if (temp[0] < 0 || temp[0] > 2 || temp[1] < 0 || temp[2] > 3)
+                if (temp.x < 0 || temp.x > 2 || temp.y < 0 || temp.y > 3)
                 {
                     possiblePositions.RemoveAt(n);
                     length--;
@@ -173,4 +177,14 @@ public class GameManagerScript : MonoBehaviour
     }
 
 }
+
+    // IEnumerator chooseCircle() {
+
+    //     foreach (Vector2 possibility in possiblePositions) {
+    //        GameObject circle = Instanstiate(circlePrefab);
+
+    //        circle.transform.position = (possibility.x, possibility.y, 20);
+    //        circle.SetParent(board[possibility.x, possibility.y].transform, false);
+    //     }
+    // }
 }
