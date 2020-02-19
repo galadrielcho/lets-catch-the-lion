@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tile : MonoBehaviour
 {
@@ -11,15 +12,13 @@ public class Tile : MonoBehaviour
     public GameManagerScript ManagerScript;
 
 
-    void Start()
-    {
-        int animal = tiletype;
-
-    }
-
     void onMouseDown()
     {
-        int[] tileAttributes = new int[] { (int)position.x, (int)position.y, (int)animal, (int)owner };
+
+        Debug.Log("hi");
+        int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
+        Debug.Log(tileAttributes.Length);
+
         ManagerScript.getNewLocation(tileAttributes);
 
         }

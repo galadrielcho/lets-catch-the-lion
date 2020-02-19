@@ -13,17 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-02-18T19:16:14.575-05:00
-  initializedAtString: 2020-02-18T19:16:13.209-05:00
+  lastUpdatedAtString: 2020-02-18T22:47:15.814-05:00
+  initializedAtString: 2020-02-18T22:47:15.769-05:00
   localBranches:
+  - name: circleclicker
+    tracking: origin/circleclicker
   - name: master
     tracking: origin/master
+  - name: tile.cs
+    tracking: origin/tile.cs
   remoteBranches:
+  - name: origin/circleclicker
+    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/master
-    tracking: '[None]'
-  - name: origin/tile.cs
     tracking: '[None]'
   remotes:
   - name: origin
@@ -35,34 +39,46 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - circleclicker
     - master
+    - tile.cs
     values:
+    - name: circleclicker
+      remote:
+        name: origin
+        url: https://github.com/galadrielcho/lets-catch-the-lion.git
+      trackingBranch: circleclicker
     - name: master
       remote:
         name: origin
         url: https://github.com/galadrielcho/lets-catch-the-lion.git
       trackingBranch: master
+    - name: tile.cs
+      remote:
+        name: origin
+        url: https://github.com/galadrielcho/lets-catch-the-lion.git
+      trackingBranch: tile.cs
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - circleclicker
       - HEAD
       - master
-      - tile.cs
     subKeyValues:
     - Values:
+      - name: circleclicker
+        remote:
+          name: origin
+          url: https://github.com/galadrielcho/lets-catch-the-lion.git
+        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
           url: https://github.com/galadrielcho/lets-catch-the-lion.git
         trackingBranch: 
       - name: master
-        remote:
-          name: origin
-          url: https://github.com/galadrielcho/lets-catch-the-lion.git
-        trackingBranch: 
-      - name: tile.cs
         remote:
           name: origin
           url: https://github.com/galadrielcho/lets-catch-the-lion.git

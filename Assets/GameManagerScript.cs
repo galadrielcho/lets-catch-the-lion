@@ -38,16 +38,19 @@ public class GameManagerScript : MonoBehaviour
             if (i == 3)
             {
                 tile.GetComponent<Image>().sprite = sprites[2];
+                tileScript.animal = 2;
 
             }
             else if (i == 5)
             {
                 tile.GetComponent<Image>().sprite = sprites[0];
+                tileScript.animal = 0;
 
             }
             else
             {
                 tile.GetComponent<Image>().sprite = sprites[i + subtract];
+                tileScript.animal = i + subtract;
 
             }
 
@@ -62,7 +65,7 @@ public class GameManagerScript : MonoBehaviour
                 owner = 1;
                 subtract = -3;
             }
-            tileScript.position = new Vector2(1, column);
+            tileScript.position = new Vector2(i + subtract, column);
 
         }
 
@@ -78,6 +81,7 @@ public class GameManagerScript : MonoBehaviour
             Tile tileScript = chick.GetComponent<Tile>();
 
             tileScript.owner = x;
+            tileScript.animal = 3;
             
             chick.GetComponent<Image>().sprite = sprites[3];
 
@@ -94,9 +98,10 @@ public class GameManagerScript : MonoBehaviour
 
     
     
-    public void  getNewLocation(object[] tileAttributes)
+    public void  getNewLocation(int[] tileAttributes)
     {
 
+        Debug.Log(tileAttributes.Length);
 
         int currentrow = (int)tileAttributes[0];
         int currentcolumn = (int)tileAttributes[1];
