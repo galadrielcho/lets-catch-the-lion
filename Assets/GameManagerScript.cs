@@ -14,10 +14,12 @@ public class GameManagerScript : MonoBehaviour
     public static int turn = 0;
     private Vector2 newLocation;
     private List<Vector2> possiblePositions;
+    public static GameManagerScript Instance;
 
 
     void Awake()
     {
+        Instance = this;
         float xcoord = -150f;
         int column = 0;
         int owner = 0;
@@ -39,6 +41,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 tile.GetComponent<Image>().sprite = sprites[2];
                 tileScript.animal = 2;
+
 
             }
             else if (i == 5)
@@ -65,6 +68,7 @@ public class GameManagerScript : MonoBehaviour
                 owner = 1;
                 subtract = -3;
             }
+
             tileScript.position = new Vector2(i + subtract, column);
 
         }
@@ -101,7 +105,7 @@ public class GameManagerScript : MonoBehaviour
     public void  getNewLocation(int[] tileAttributes)
     {
 
-        Debug.Log(tileAttributes.Length);
+        Debug.Log("hi");
 
         int currentrow = (int)tileAttributes[0];
         int currentcolumn = (int)tileAttributes[1];
@@ -125,27 +129,30 @@ public class GameManagerScript : MonoBehaviour
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 2));
         }
-        else if (animal == 2)
+        else if (animal == 3)
         {
             // chick
             if (owner == 0)
             {
                 possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+                Debug.Log("Checkpoint1");
+
             }
             if (owner == 1)
             {
                 possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
             }
+        }
 
-        else if (animal == 3)
+        else if (animal == 0)
         {
             // elephant
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 2));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2)); 4
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 2));
         }
-        else if (animal == 4)
+        else if (animal == 2)
         {
             // giraffe
             possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
@@ -153,7 +160,7 @@ public class GameManagerScript : MonoBehaviour
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
         }
-        else if (animal == 5)
+        else if (animal == 4)
         {
             // chicken
 
@@ -165,26 +172,29 @@ public class GameManagerScript : MonoBehaviour
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
         }
-            int length = possiblePositions.Count;
-            int n = 0;
+        int length = possiblePositions.Count;
+        int n = 0;
+
 
         while (n < length)
-           {
-                Vector2 temp = possiblePositions[n];
-                if (temp.x < 0 || temp.x > 2 || temp.y < 0 || temp.y > 3)
-                {
-                    possiblePositions.RemoveAt(n);
-                    length--;
-                }
-                n++;
+        {
+            Vector2 temp = possiblePositions[n];
+            if (temp.x < 0 || temp.x > 2 || temp.y < 0 || temp.y > 3)
+            {
+                possiblePositions.RemoveAt(n);
+                length--;
             }
-        StartCoroutine(chooseCircle());
-    }
+            n++;
+            Debug.Log("while loop");
+        }
+        Debug.Log("chooseCircle");
+    
 
 }
 
     IEnumerator chooseCircle() {
 
+        Debug.Log("BRO");
         List<GameObject> circles = new List<GameObject>();
 
         foreach (Vector2 possibility in possiblePositions) {

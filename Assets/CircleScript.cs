@@ -9,7 +9,7 @@ public class CircleScript : MonoBehaviour
     public static bool wasClicked = false;
     public static Vector2 location;
 
-    void onMouseDown() {
+    void OnMouseDown() {
 
         wasClicked = true;
 
