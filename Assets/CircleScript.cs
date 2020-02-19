@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CircleScript : MonoBehaviour
 {
-    void ClickBehavior() {
+      
+    void onMouseDown() {
 
-        
+        GameManagerScript.wasSomebodyClicked = true;
     }
 }
