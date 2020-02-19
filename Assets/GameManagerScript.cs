@@ -12,7 +12,7 @@ public class GameManagerScript : MonoBehaviour
     private GameObject[,] board = new GameObject[3, 4];
     public Sprite[] sprites;
     public static int turn = 0;
-
+    private Vector2 newLocation;
     private List<Vector2> possiblePositions;
 
 
@@ -179,19 +179,30 @@ public class GameManagerScript : MonoBehaviour
 
     IEnumerator chooseCircle() {
 
-        List<GameObject> circles;
+        List<GameObject> circles = new List<GameObject>();
 
         foreach (Vector2 possibility in possiblePositions) {
            GameObject circle = Instantiate(circlePrefab);
 
-           circle.transform.position = new Vector3(possibility.x, possibility.y, 20);
+           circle.transform.position = new Vector3(-50 + 100 * possibility.y, 100 - possibility.x * 100); // -  100x + 100
            circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);
+
+            circles.Add(circle);
+    
+        }
+        
+        while (!CircleScript.wasClicked) {
+            yield return null;
         }
 
-        yield return new WaitForSeconds(5f);
-        // while (!wasClicked) {
-        //     yield return null;
-        // }
+        newLocation = CircleScript.location;
+        foreach (GameObject circle in circles) {
+            Destroy(circle);
+        }
+
+        yield return null;
+
+
 
 
     }
