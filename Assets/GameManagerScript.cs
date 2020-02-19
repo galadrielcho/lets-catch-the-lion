@@ -13,7 +13,7 @@ public class GameManagerScript : MonoBehaviour
     public Sprite[] sprites;
     public static int turn = 0;
     private Vector2 newLocation;
-    private List<Vector2> possiblePositions;
+    public List<Vector2> possibilities;
     public static GameManagerScript Instance;
 
 
@@ -105,14 +105,15 @@ public class GameManagerScript : MonoBehaviour
     public void  getNewLocation(int[] tileAttributes)
     {
 
-        Debug.Log("hi");
-
         int currentrow = (int)tileAttributes[0];
         int currentcolumn = (int)tileAttributes[1];
         int animal = (int)tileAttributes[2];
         int owner = (int)tileAttributes[3];
 
         List<Vector2> possiblePositions = new List<Vector2>();
+
+        Debug.Log(owner);
+        Debug.Log(animal);
 
         if (animal == 1)
         {
@@ -135,7 +136,6 @@ public class GameManagerScript : MonoBehaviour
             if (owner == 0)
             {
                 possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-                Debug.Log("Checkpoint1");
 
             }
             if (owner == 1)
@@ -149,7 +149,7 @@ public class GameManagerScript : MonoBehaviour
             // elephant
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 2));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2)); 4
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2)); 
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 2));
         }
         else if (animal == 2)
@@ -172,10 +172,9 @@ public class GameManagerScript : MonoBehaviour
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 2));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 2));
         }
+
         int length = possiblePositions.Count;
         int n = 0;
-
-
         while (n < length)
         {
             Vector2 temp = possiblePositions[n];
@@ -185,23 +184,28 @@ public class GameManagerScript : MonoBehaviour
                 length--;
             }
             n++;
-            Debug.Log("while loop");
         }
-        Debug.Log("chooseCircle");
+
+        possibilities = possiblePositions;
+
+
+        StartCoroutine("chooseCircle");
     
 
 }
 
     IEnumerator chooseCircle() {
 
-        Debug.Log("BRO");
         List<GameObject> circles = new List<GameObject>();
-
-        foreach (Vector2 possibility in possiblePositions) {
-           GameObject circle = Instantiate(circlePrefab);
-
-           circle.transform.position = new Vector3(-50 + 100 * possibility.y, 100 - possibility.x * 100); // -  100x + 100
-           circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);
+        foreach (Vector2 possibility in possibilities) {
+            
+            Debug.Log("Eggs");
+            GameObject circle = Instantiate(circlePrefab);
+            Debug.Log(possibility.x);
+            Debug.Log(possibility.y);
+            
+            circle.transform.position = new Vector3(-50 + 100 * possibility.y, 100 - possibility.x * 100); // -  100x + 100
+            circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);
 
             circles.Add(circle);
     
@@ -216,6 +220,7 @@ public class GameManagerScript : MonoBehaviour
             Destroy(circle);
         }
 
+        Debug.Log(newLocation);
         yield return null;
 
 
