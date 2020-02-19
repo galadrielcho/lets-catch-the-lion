@@ -13,468 +13,450 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-02-18T19:32:15.892-05:00
-  initializedAtString: 2020-02-18T19:04:53.668-05:00
+  lastUpdatedAtString: 2020-02-18T21:50:26.674-05:00
+  initializedAtString: 2020-02-18T21:26:37.438-05:00
   entries:
-  - path: Assets\CircleScript.cs
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Assets\CircleScript.cs
-    projectPath: Assets\CircleScript.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Assets\GameManagerScript.cs
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Assets\GameManagerScript.cs
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Assets\GameManagerScript.cs
     projectPath: Assets\GameManagerScript.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Assets\Tile.cs
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Assets\Tile.cs
+    projectPath: Assets\Tile.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\ArtifactDB
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\ArtifactDB
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\Artifacts\0d\0df511ab9dc30954325510231f470db3
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\0d\0df511ab9dc30954325510231f470db3
-    projectPath: Library\Artifacts\0d\0df511ab9dc30954325510231f470db3
+  - path: Library\Artifacts\07\076582604535f4a838e8dec057da36e4
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\07\076582604535f4a838e8dec057da36e4
+    projectPath: Library\Artifacts\07\076582604535f4a838e8dec057da36e4
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\Artifacts\14\145fe265ebfb5596f78c19672c2a2c15
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\14\145fe265ebfb5596f78c19672c2a2c15
-    projectPath: Library\Artifacts\14\145fe265ebfb5596f78c19672c2a2c15
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\Artifacts\15\155c9e28ada1675629fef03e915253c3
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\15\155c9e28ada1675629fef03e915253c3
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\15\155c9e28ada1675629fef03e915253c3
     projectPath: Library\Artifacts\15\155c9e28ada1675629fef03e915253c3
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\17\17f869a5fc02c539d23eeaca4ca50ff1
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\17\17f869a5fc02c539d23eeaca4ca50ff1
-    projectPath: Library\Artifacts\17\17f869a5fc02c539d23eeaca4ca50ff1
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Library\Artifacts\24\247d644b87e3a9473e7e49f1f2000d7d
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\24\247d644b87e3a9473e7e49f1f2000d7d
+    projectPath: Library\Artifacts\24\247d644b87e3a9473e7e49f1f2000d7d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\Artifacts\2b\2b1ea0fa594b43dc1a94fceaef3c8088
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\2b\2b1ea0fa594b43dc1a94fceaef3c8088
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\2b\2b1ea0fa594b43dc1a94fceaef3c8088
     projectPath: Library\Artifacts\2b\2b1ea0fa594b43dc1a94fceaef3c8088
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\2f\2fd40e8d5b5d0231a7ac9c0961403d7a
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\2f\2fd40e8d5b5d0231a7ac9c0961403d7a
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\2f\2fd40e8d5b5d0231a7ac9c0961403d7a
     projectPath: Library\Artifacts\2f\2fd40e8d5b5d0231a7ac9c0961403d7a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
-    projectPath: Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
-    projectPath: Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
-    projectPath: Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
-    projectPath: Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\68\6867d2e560c0c972be37d439b68d2e6a
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\68\6867d2e560c0c972be37d439b68d2e6a
-    projectPath: Library\Artifacts\68\6867d2e560c0c972be37d439b68d2e6a
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
+    projectPath: Library\Artifacts\31\314372321ca6ee41ac528f1386b67e5c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\34\345da177b6d083ae371d6cfa96970d85
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\34\345da177b6d083ae371d6cfa96970d85
+    projectPath: Library\Artifacts\34\345da177b6d083ae371d6cfa96970d85
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
+    projectPath: Library\Artifacts\39\3950bc1d5cfe94a606d466adfa7e8e8d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
+    projectPath: Library\Artifacts\3c\3c7f3681987e9fbf54dba59319d7779f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\49\4904a8041f03622c705581790e5aa131
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\49\4904a8041f03622c705581790e5aa131
+    projectPath: Library\Artifacts\49\4904a8041f03622c705581790e5aa131
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
+    projectPath: Library\Artifacts\5a\5a90e345974f1a2ba73b06747f5ed4d1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5c\5cfb2a6b46967bcbaf3fe801b9ee5f29
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\5c\5cfb2a6b46967bcbaf3fe801b9ee5f29
+    projectPath: Library\Artifacts\5c\5cfb2a6b46967bcbaf3fe801b9ee5f29
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\65\65ebeb1e34cbca778c43f9bb4869b9f1
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\65\65ebeb1e34cbca778c43f9bb4869b9f1
+    projectPath: Library\Artifacts\65\65ebeb1e34cbca778c43f9bb4869b9f1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\Artifacts\6a\6a476f50716ceeaa1b3c1e66bf20f9d4
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\6a\6a476f50716ceeaa1b3c1e66bf20f9d4
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\6a\6a476f50716ceeaa1b3c1e66bf20f9d4
     projectPath: Library\Artifacts\6a\6a476f50716ceeaa1b3c1e66bf20f9d4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\6f\6fc717f65b5a1ae95039fe24d84083de
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\6f\6fc717f65b5a1ae95039fe24d84083de
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\6f\6fc717f65b5a1ae95039fe24d84083de
     projectPath: Library\Artifacts\6f\6fc717f65b5a1ae95039fe24d84083de
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\73\73854e4d0dacf1aa23c602bd3f837a03
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\73\73854e4d0dacf1aa23c602bd3f837a03
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\73\73854e4d0dacf1aa23c602bd3f837a03
     projectPath: Library\Artifacts\73\73854e4d0dacf1aa23c602bd3f837a03
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
+    projectPath: Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\78\7895486fbd203409d9cc617fa3030020
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\78\7895486fbd203409d9cc617fa3030020
+    projectPath: Library\Artifacts\78\7895486fbd203409d9cc617fa3030020
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
-    projectPath: Library\Artifacts\75\75418e0a6ff01251747ccb314d8af837
+  - path: Library\Artifacts\7b\7b62aaa2838ad8fc0728d03292f3cfad
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\7b\7b62aaa2838ad8fc0728d03292f3cfad
+    projectPath: Library\Artifacts\7b\7b62aaa2838ad8fc0728d03292f3cfad
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Library\Artifacts\91\911d68e509f770090a0ad86284d133d3
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\91\911d68e509f770090a0ad86284d133d3
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\91\911d68e509f770090a0ad86284d133d3
     projectPath: Library\Artifacts\91\911d68e509f770090a0ad86284d133d3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\91\913dbba26ea03e8537ad929709e195c4
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\91\913dbba26ea03e8537ad929709e195c4
+    projectPath: Library\Artifacts\91\913dbba26ea03e8537ad929709e195c4
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Library\Artifacts\94\9457abe7a686f352ecdf6064c1beb4a5
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\94\9457abe7a686f352ecdf6064c1beb4a5
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\94\9457abe7a686f352ecdf6064c1beb4a5
     projectPath: Library\Artifacts\94\9457abe7a686f352ecdf6064c1beb4a5
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\98\98b8c4f0ffbbcd726ab6ebfdee87cfce
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\98\98b8c4f0ffbbcd726ab6ebfdee87cfce
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\98\98b8c4f0ffbbcd726ab6ebfdee87cfce
     projectPath: Library\Artifacts\98\98b8c4f0ffbbcd726ab6ebfdee87cfce
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\9a\9ae919c53038fb1865852466fa8144ef
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\9a\9ae919c53038fb1865852466fa8144ef
+    projectPath: Library\Artifacts\9a\9ae919c53038fb1865852466fa8144ef
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\a0\a0c951aa926e028adae60207de23c093
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\a0\a0c951aa926e028adae60207de23c093
-    projectPath: Library\Artifacts\a0\a0c951aa926e028adae60207de23c093
+  - path: Library\Artifacts\a0\a0449f243924a8fa28686bf6bc9e7af5
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\a0\a0449f243924a8fa28686bf6bc9e7af5
+    projectPath: Library\Artifacts\a0\a0449f243924a8fa28686bf6bc9e7af5
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\Artifacts\a2\a24c9c5d30df694703ea55c0d43f05fc
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\a2\a24c9c5d30df694703ea55c0d43f05fc
-    projectPath: Library\Artifacts\a2\a24c9c5d30df694703ea55c0d43f05fc
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\a3\a30f0783da34822625d3d9226781eabe
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\a3\a30f0783da34822625d3d9226781eabe
+    projectPath: Library\Artifacts\a3\a30f0783da34822625d3d9226781eabe
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\Artifacts\ab\ab72fb45ebd8c71cb64317cf7d4c7253
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\ab\ab72fb45ebd8c71cb64317cf7d4c7253
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\ab\ab72fb45ebd8c71cb64317cf7d4c7253
     projectPath: Library\Artifacts\ab\ab72fb45ebd8c71cb64317cf7d4c7253
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\af\af79cef7b242ad31988423a34a10a6aa
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\af\af79cef7b242ad31988423a34a10a6aa
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\af\af79cef7b242ad31988423a34a10a6aa
     projectPath: Library\Artifacts\af\af79cef7b242ad31988423a34a10a6aa
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b2\b2494b4eed0c11de2320706e208a30b3
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\b2\b2494b4eed0c11de2320706e208a30b3
+    projectPath: Library\Artifacts\b2\b2494b4eed0c11de2320706e208a30b3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\c0\c0c75079b0070bd120e1d3959245eb12
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\c0\c0c75079b0070bd120e1d3959245eb12
-    projectPath: Library\Artifacts\c0\c0c75079b0070bd120e1d3959245eb12
+  - path: Library\Artifacts\c1\c1eab6aee1049b8d1672b1efb7454fb5
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\c1\c1eab6aee1049b8d1672b1efb7454fb5
+    projectPath: Library\Artifacts\c1\c1eab6aee1049b8d1672b1efb7454fb5
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Library\Artifacts\c2\c2c2077817587f5d9d8988c60799cb34
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\c2\c2c2077817587f5d9d8988c60799cb34
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\c2\c2c2077817587f5d9d8988c60799cb34
     projectPath: Library\Artifacts\c2\c2c2077817587f5d9d8988c60799cb34
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\c2\c2dfdf62aac9ed5720cf2a46532afc85
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\c2\c2dfdf62aac9ed5720cf2a46532afc85
+    projectPath: Library\Artifacts\c2\c2dfdf62aac9ed5720cf2a46532afc85
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Library\Artifacts\cb\cbe32bd31b87a96f5038e58432149d36
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\cb\cbe32bd31b87a96f5038e58432149d36
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\cb\cbe32bd31b87a96f5038e58432149d36
     projectPath: Library\Artifacts\cb\cbe32bd31b87a96f5038e58432149d36
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\ce\ceaaf8fa75002639d25e5a873a067b63
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\ce\ceaaf8fa75002639d25e5a873a067b63
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\ce\ceaaf8fa75002639d25e5a873a067b63
     projectPath: Library\Artifacts\ce\ceaaf8fa75002639d25e5a873a067b63
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\cf\cf5a601a87610e491e9c3e4a283f5df1
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\cf\cf5a601a87610e491e9c3e4a283f5df1
-    projectPath: Library\Artifacts\cf\cf5a601a87610e491e9c3e4a283f5df1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\d1\d1eebdbff3678c1a1b19b3d5a7132d7e
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\d1\d1eebdbff3678c1a1b19b3d5a7132d7e
-    projectPath: Library\Artifacts\d1\d1eebdbff3678c1a1b19b3d5a7132d7e
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: Library\Artifacts\d0\d07926d566c7e0cf12ca9ea2fc9fb074
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\d0\d07926d566c7e0cf12ca9ea2fc9fb074
+    projectPath: Library\Artifacts\d0\d07926d566c7e0cf12ca9ea2fc9fb074
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\d3\d3fc631e59d6ce8d528a8b150fc7c89a
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\d3\d3fc631e59d6ce8d528a8b150fc7c89a
+    projectPath: Library\Artifacts\d3\d3fc631e59d6ce8d528a8b150fc7c89a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\d6\d64be3ff4136404cbc745c836f4bf5c0
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\d6\d64be3ff4136404cbc745c836f4bf5c0
+    projectPath: Library\Artifacts\d6\d64be3ff4136404cbc745c836f4bf5c0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\Artifacts\da\da74832dbbf323ec6d139171f059b645
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\da\da74832dbbf323ec6d139171f059b645
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\da\da74832dbbf323ec6d139171f059b645
     projectPath: Library\Artifacts\da\da74832dbbf323ec6d139171f059b645
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\f1\f1e7f2811cacc0c83be7ae4245ba64dc
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\f1\f1e7f2811cacc0c83be7ae4245ba64dc
-    projectPath: Library\Artifacts\f1\f1e7f2811cacc0c83be7ae4245ba64dc
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
-    projectPath: Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
+  - path: Library\Artifacts\e7\e7b82f91ccad105382d7c9ba7ad785f1
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\e7\e7b82f91ccad105382d7c9ba7ad785f1
+    projectPath: Library\Artifacts\e7\e7b82f91ccad105382d7c9ba7ad785f1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\f2\f2bf881e859997f7219033e64da64994
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\f2\f2bf881e859997f7219033e64da64994
-    projectPath: Library\Artifacts\f2\f2bf881e859997f7219033e64da64994
+  - path: Library\Artifacts\ef\efade6ca9a2d965ea4c04ced8fc7a653
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\ef\efade6ca9a2d965ea4c04ced8fc7a653
+    projectPath: Library\Artifacts\ef\efade6ca9a2d965ea4c04ced8fc7a653
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\f1\f1a57da7c060ac831092d0e5b309c252
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\f1\f1a57da7c060ac831092d0e5b309c252
+    projectPath: Library\Artifacts\f1\f1a57da7c060ac831092d0e5b309c252
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
+    projectPath: Library\Artifacts\f1\f1ed983679465d6aa26a23f97720876a
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Library\Artifacts\f2\f2d10c71503d496a25cdad2a864dc20b
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\f2\f2d10c71503d496a25cdad2a864dc20b
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\f2\f2d10c71503d496a25cdad2a864dc20b
     projectPath: Library\Artifacts\f2\f2d10c71503d496a25cdad2a864dc20b
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\f6\f683d912d1d9dd1f0e87190a9d81b683
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\f6\f683d912d1d9dd1f0e87190a9d81b683
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\f6\f683d912d1d9dd1f0e87190a9d81b683
     projectPath: Library\Artifacts\f6\f683d912d1d9dd1f0e87190a9d81b683
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\fd\fd274ce5b597f47cd66103f58bf19c4b
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\Artifacts\fd\fd274ce5b597f47cd66103f58bf19c4b
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\Artifacts\fd\fd274ce5b597f47cd66103f58bf19c4b
     projectPath: Library\Artifacts\fd\fd274ce5b597f47cd66103f58bf19c4b
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\EditorInstance.json
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\EditorInstance.json
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\SourceAssetDB
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\SourceAssetDB
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\StateCache\Hierarchy\2417e5-mainStage.json
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\StateCache\Hierarchy\2417e5-mainStage.json
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\StateCache\Hierarchy\2417e5-mainStage.json
     projectPath: Library\StateCache\Hierarchy\2417e5-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\StateCache\SceneView\b1f03e-mainStage.json
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Library\StateCache\SceneView\b1f03e-mainStage.json
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Library\StateCache\SceneView\b1f03e-mainStage.json
     projectPath: Library\StateCache\SceneView\b1f03e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Temp\__Backupscenes\0.backup
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Temp\UnityLockfile
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityLockfile
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-40f854d52ad893741adc1fa66aeb9f6e
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-40f854d52ad893741adc1fa66aeb9f6e
-    projectPath: Temp\UnityTempFile-40f854d52ad893741adc1fa66aeb9f6e
+  - path: Temp\UnityTempFile-070bfaab623ce284686305411676d6bf
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-070bfaab623ce284686305411676d6bf
+    projectPath: Temp\UnityTempFile-070bfaab623ce284686305411676d6bf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-555065d90ee909b48956d8b78f500c93
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-555065d90ee909b48956d8b78f500c93
-    projectPath: Temp\UnityTempFile-555065d90ee909b48956d8b78f500c93
+  - path: Temp\UnityTempFile-0ac0e67561d4a604a92cd853b1a856db
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-0ac0e67561d4a604a92cd853b1a856db
+    projectPath: Temp\UnityTempFile-0ac0e67561d4a604a92cd853b1a856db
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-5b7e485df9ef47544b33a6ce89464666
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-5b7e485df9ef47544b33a6ce89464666
-    projectPath: Temp\UnityTempFile-5b7e485df9ef47544b33a6ce89464666
+  - path: Temp\UnityTempFile-15054447747cb714787c67c8a3111128
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-15054447747cb714787c67c8a3111128
+    projectPath: Temp\UnityTempFile-15054447747cb714787c67c8a3111128
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-5cc323fda1a09ef408f94526b8ef749c
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-5cc323fda1a09ef408f94526b8ef749c
-    projectPath: Temp\UnityTempFile-5cc323fda1a09ef408f94526b8ef749c
+  - path: Temp\UnityTempFile-21092099abd94b74496e02e4ec6cba5d
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-21092099abd94b74496e02e4ec6cba5d
+    projectPath: Temp\UnityTempFile-21092099abd94b74496e02e4ec6cba5d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-60f6f7c0ea7fae34886320863e38a1d8
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-60f6f7c0ea7fae34886320863e38a1d8
-    projectPath: Temp\UnityTempFile-60f6f7c0ea7fae34886320863e38a1d8
+  - path: Temp\UnityTempFile-4f9a2ee2c67a9374b89260b3597b2dd7
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-4f9a2ee2c67a9374b89260b3597b2dd7
+    projectPath: Temp\UnityTempFile-4f9a2ee2c67a9374b89260b3597b2dd7
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-623b09467ba239b44843035af57fbe08
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-623b09467ba239b44843035af57fbe08
-    projectPath: Temp\UnityTempFile-623b09467ba239b44843035af57fbe08
+  - path: Temp\UnityTempFile-5efa0578885018c40832631bdf98a9ac
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-5efa0578885018c40832631bdf98a9ac
+    projectPath: Temp\UnityTempFile-5efa0578885018c40832631bdf98a9ac
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-6f91a0160142ca74788062dcfde8d292
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-6f91a0160142ca74788062dcfde8d292
-    projectPath: Temp\UnityTempFile-6f91a0160142ca74788062dcfde8d292
+  - path: Temp\UnityTempFile-b2662ef6828b771429a1a12aac94f36e
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-b2662ef6828b771429a1a12aac94f36e
+    projectPath: Temp\UnityTempFile-b2662ef6828b771429a1a12aac94f36e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-784d7fe9e3dcea4459931bfd97db9fa2
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-784d7fe9e3dcea4459931bfd97db9fa2
-    projectPath: Temp\UnityTempFile-784d7fe9e3dcea4459931bfd97db9fa2
+  - path: Temp\UnityTempFile-b5b1e10b65515bf4a95d6ffd9aded0ce
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-b5b1e10b65515bf4a95d6ffd9aded0ce
+    projectPath: Temp\UnityTempFile-b5b1e10b65515bf4a95d6ffd9aded0ce
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-792b4a80315c0bb4c805bb6cc7fac975
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-792b4a80315c0bb4c805bb6cc7fac975
-    projectPath: Temp\UnityTempFile-792b4a80315c0bb4c805bb6cc7fac975
+  - path: Temp\UnityTempFile-bfd51c60db702c94e8cbc3cc02a11d04
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-bfd51c60db702c94e8cbc3cc02a11d04
+    projectPath: Temp\UnityTempFile-bfd51c60db702c94e8cbc3cc02a11d04
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-8325c3a7447f83d4ba97ae762ec49fc1
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-8325c3a7447f83d4ba97ae762ec49fc1
-    projectPath: Temp\UnityTempFile-8325c3a7447f83d4ba97ae762ec49fc1
+  - path: Temp\UnityTempFile-cf7087596ac10d6469add961896d2cc9
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-cf7087596ac10d6469add961896d2cc9
+    projectPath: Temp\UnityTempFile-cf7087596ac10d6469add961896d2cc9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-8c483aedd8a884e48b75afb23a60b5a9
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-8c483aedd8a884e48b75afb23a60b5a9
-    projectPath: Temp\UnityTempFile-8c483aedd8a884e48b75afb23a60b5a9
+  - path: Temp\UnityTempFile-e9edd84eb3e9969428b4f9d666001105
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-e9edd84eb3e9969428b4f9d666001105
+    projectPath: Temp\UnityTempFile-e9edd84eb3e9969428b4f9d666001105
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-93643743d25c1ee41a1ade42829e70e6
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-93643743d25c1ee41a1ade42829e70e6
-    projectPath: Temp\UnityTempFile-93643743d25c1ee41a1ade42829e70e6
+  - path: Temp\UnityTempFile-fddf73ff37559334a8b7a703b5afd883
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-fddf73ff37559334a8b7a703b5afd883
+    projectPath: Temp\UnityTempFile-fddf73ff37559334a8b7a703b5afd883
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-93777530dd71f47479d89d2a24bb0bb8
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-93777530dd71f47479d89d2a24bb0bb8
-    projectPath: Temp\UnityTempFile-93777530dd71f47479d89d2a24bb0bb8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-9f135018bba3fba40a3ac96928803d13
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-9f135018bba3fba40a3ac96928803d13
-    projectPath: Temp\UnityTempFile-9f135018bba3fba40a3ac96928803d13
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-a4c25627e3b0fa144bb1433e1de71e56
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-a4c25627e3b0fa144bb1433e1de71e56
-    projectPath: Temp\UnityTempFile-a4c25627e3b0fa144bb1433e1de71e56
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-b0bf3ca02d0e36b4b9c4944af015ea42
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-b0bf3ca02d0e36b4b9c4944af015ea42
-    projectPath: Temp\UnityTempFile-b0bf3ca02d0e36b4b9c4944af015ea42
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-d5c9f691aa4272f48b7274f948d7a408
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-d5c9f691aa4272f48b7274f948d7a408
-    projectPath: Temp\UnityTempFile-d5c9f691aa4272f48b7274f948d7a408
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-dc6452bd5751e5744a37e65159a318ac
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-dc6452bd5751e5744a37e65159a318ac
-    projectPath: Temp\UnityTempFile-dc6452bd5751e5744a37e65159a318ac
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-df4daa92a38e1f24b982366c9c199c6f
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-df4daa92a38e1f24b982366c9c199c6f
-    projectPath: Temp\UnityTempFile-df4daa92a38e1f24b982366c9c199c6f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f1ce619d083d5894e948e9517e004d58
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-f1ce619d083d5894e948e9517e004d58
-    projectPath: Temp\UnityTempFile-f1ce619d083d5894e948e9517e004d58
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f2adafab39ba8f44895dd1d37dcbf5da
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-f2adafab39ba8f44895dd1d37dcbf5da
-    projectPath: Temp\UnityTempFile-f2adafab39ba8f44895dd1d37dcbf5da
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f3b2dae77aa647e4eb223dd29ea8b78a
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-f3b2dae77aa647e4eb223dd29ea8b78a
-    projectPath: Temp\UnityTempFile-f3b2dae77aa647e4eb223dd29ea8b78a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f5133f2413ca28949af9813984963eeb
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-f5133f2413ca28949af9813984963eeb
-    projectPath: Temp\UnityTempFile-f5133f2413ca28949af9813984963eeb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-fb0bdfaf16488c945952c1eb00946768
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-fb0bdfaf16488c945952c1eb00946768
-    projectPath: Temp\UnityTempFile-fb0bdfaf16488c945952c1eb00946768
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-fd0c5083682d4ac429ab9664a9f202df
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-fd0c5083682d4ac429ab9664a9f202df
-    projectPath: Temp\UnityTempFile-fd0c5083682d4ac429ab9664a9f202df
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-fd350e555baa0a944826cce1088c9463
-    fullPath: C:\Users\Lorie\Repositories\lets-catch-the-lion\Temp\UnityTempFile-fd350e555baa0a944826cce1088c9463
-    projectPath: Temp\UnityTempFile-fd350e555baa0a944826cce1088c9463
+  - path: Temp\UnityTempFile-fe9d272cc630e5a4b956ef0950759469
+    fullPath: C:\Users\Galad\OneDrive\Desktop\lets-catch-the-lion\Temp\UnityTempFile-fe9d272cc630e5a4b956ef0950759469
+    projectPath: Temp\UnityTempFile-fe9d272cc630e5a4b956ef0950759469
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

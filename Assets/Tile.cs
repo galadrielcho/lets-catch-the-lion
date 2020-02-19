@@ -6,25 +6,23 @@ public class Tile : MonoBehaviour
 {
     public int tiletype;
     public int owner;   
-    private GameManagerScript ManagerScript;
-    public Vector2 newlocation;
+    public Vector2 position;
     public int animal;
+    public GameManagerScript ManagerScript;
 
 
     void Start()
     {
         int animal = tiletype;
-        GameObject GameManager = GameObject.Find("GameManager");
-        ManagerScript = GameManager.GetComponent<GameManagerScript>();
-
 
     }
 
-    void click()
+    void onMouseDown()
     {
-        // fill up later with getnew Location
+        int[] tileAttributes = new int[] { (int)position.x, (int)position.y, (int)animal, (int)owner };
+        ManagerScript.getNewLocation(tileAttributes);
 
-    }
+        }
 
 
 

@@ -62,6 +62,7 @@ public class GameManagerScript : MonoBehaviour
                 owner = 1;
                 subtract = -3;
             }
+            tileScript.position = new Vector2(1, column);
 
         }
 
@@ -80,7 +81,6 @@ public class GameManagerScript : MonoBehaviour
             
             chick.GetComponent<Image>().sprite = sprites[3];
 
-            Debug.Log(tileScript.owner);
 
             chick.transform.Rotate(0, 0, -90  + (180 * tileScript.owner));
             chick.transform.localScale = new Vector3(.9f, .9f, .9f);
@@ -94,14 +94,14 @@ public class GameManagerScript : MonoBehaviour
 
     
     
-    void  getNewLocation(object[] tileAttributes)
+    public void  getNewLocation(object[] tileAttributes)
     {
-        Vector2 tileposition = (Vector2)tileAttributes[0];
 
-        int animal = (int)tileAttributes[1];
-        int owner = (int)tileAttributes[2];
-        int currentrow = (int)tileposition[0];
-        int currentcolumn = (int)tileposition[1];
+
+        int currentrow = (int)tileAttributes[0];
+        int currentcolumn = (int)tileAttributes[1];
+        int animal = (int)tileAttributes[2];
+        int owner = (int)tileAttributes[3];
 
         List<Vector2> possiblePositions = new List<Vector2>();
 
@@ -173,6 +173,7 @@ public class GameManagerScript : MonoBehaviour
                 }
                 n++;
             }
+        StartCoroutine(chooseCircle());
     }
 
 }
