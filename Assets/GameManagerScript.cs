@@ -90,6 +90,8 @@ public class GameManagerScript : MonoBehaviour
 
             tileScript.owner = x;
             tileScript.animal = 3;
+
+            tileScript.position = new Vector2(1, 1 + x);
             
             chick.GetComponent<Image>().sprite = sprites[3];
 
@@ -118,6 +120,8 @@ public class GameManagerScript : MonoBehaviour
 
         if (animal == 1)
         {
+
+            Debug.Log("Lion!");
             // lion
             // add up, down, right, left
 
@@ -125,7 +129,7 @@ public class GameManagerScript : MonoBehaviour
             possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
-            // diagonal directions	
+            // // diagonal directions	
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
             possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
             possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
@@ -133,45 +137,53 @@ public class GameManagerScript : MonoBehaviour
         }
         else if (animal == 3)
         {
+            Debug.Log("Chick!");
             // chick
-            if (owner == 0)
-            {
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            // if (owner == 0)
+            // {
+            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
 
-            }
-            if (owner == 1)
-            {
-                possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            }
+            // }
+            
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+
+            // if (owner == 1)
+            // {
+            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            // }
         }
 
         else if (animal == 0)
         {
-            // elephant
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1)); 
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
+
+            Debug.Log("Elephant!");
+            // // elephant
+            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
+            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
+            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1)); 
+            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
         }
         else if (animal == 2)
         {
+            Debug.Log("Giraffe!");
             // giraffe
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            // possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            // possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
         }
         else if (animal == 4)
         {
+            Debug.Log("Chicken!");
             // chicken
 
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
-            // diagonal directions	
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
+            // possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            // possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            // // diagonal directions	
+            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
+            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
         }
 
         
@@ -181,6 +193,7 @@ public class GameManagerScript : MonoBehaviour
         while (n<length)
         {
             Vector2 temp = possiblePositions[n];
+            Debug.Log(temp);
 
             if (temp.x < 0 || temp.x > 2 || temp.y < 0 || temp.y > 3)
             {
@@ -209,7 +222,7 @@ public class GameManagerScript : MonoBehaviour
       
 
 
-        StartCoroutine("chooseCircle");
+       //  StartCoroutine("chooseCircle");
     
 
 }
@@ -218,15 +231,12 @@ public class GameManagerScript : MonoBehaviour
 
         List<GameObject> circles = new List<GameObject>();
         foreach (Vector2 possibility in possibilities) {
-
-            Debug.Log(possibility);
             
             GameObject circle = Instantiate(circlePrefab);
             
             circle.transform.position = new Vector3(-150 + 100 * possibility.y, 100 - possibility.x * 100); // -  100x + 100
 
            if (board[(int)possibility.x, (int)possibility.y] != null) {
-                Debug.Log("test");
                 circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);
 
             }
