@@ -125,32 +125,30 @@ public class GameManagerScript : MonoBehaviour
             // lion
             // add up, down, right, left
 
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            possiblePositions.Add(new Vector2((float)currentrow,(float) currentcolumn + 1));
+            possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn - 1));
+            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn));
+            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn));
             // // diagonal directions	
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
-            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
+            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn + 1));
+            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn - 1));
+            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn + 1));
+            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn - 1));
         }
         else if (animal == 3)
         {
             Debug.Log("Chick!");
             // chick
-            // if (owner == 0)
-            // {
-            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            if (owner == 0)
+            {
+                possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn + 1));
 
-            // }
-            
-            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            }
 
-            // if (owner == 1)
-            // {
-            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            // }
+            if (owner == 1)
+            {
+                possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn - 1));
+            }
         }
 
         else if (animal == 0)

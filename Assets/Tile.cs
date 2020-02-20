@@ -18,10 +18,8 @@ public class Tile : MonoBehaviour, IPointerDownHandler
 
 
         // int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
-        Debug.Log(position.y);
 
         int x = (int)position.x;
-        Debug.Log(x);
 
         int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner};
 
