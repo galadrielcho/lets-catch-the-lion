@@ -15,7 +15,7 @@ public class Tile : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
 
-        Debug.Log(animal);
+
 
         int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
         GameManagerScript.Instance.getNewLocation(tileAttributes);
