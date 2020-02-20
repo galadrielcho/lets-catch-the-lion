@@ -108,16 +108,18 @@ public class GameManagerScript : MonoBehaviour
 
     
     
-    public void  getNewLocation(float[] tileAttributes)
+    public void  getNewLocation(int[] tileAttributes)
     {
 
-        float currentrow = tileAttributes[0];
-        float currentcolumn = tileAttributes[1];
+        int currentrow = tileAttributes[0];
+        int currentcolumn = tileAttributes[1];
         int animal = (int)tileAttributes[2];
         int owner = (int)tileAttributes[3];
 
         List<Vector2> possiblePositions = new List<Vector2>();
 
+
+        possiblePositions.Clear();
         if (animal == 1)
         {
 
@@ -139,55 +141,63 @@ public class GameManagerScript : MonoBehaviour
         {
             Debug.Log("Chick!");
             // // chick
-            // if (owner == 0)
-            // {
-            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            if (owner == 0)
+            {
+                Debug.Log(possiblePositions);
 
-            // }
 
-            // if (owner == 1)
-            // {
-            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            // }
+                Debug.Log(new Vector2((float)currentrow, (float)currentcolumn + 1));
+
+                // possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn + 1));
+
+                
+
+            }
+
+            else if (owner == 1)
+            {
+                // possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            }
         }
 
         else if (animal == 0)
         {
 
             Debug.Log("Elephant!");
-            // // elephant
-            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
-            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
-            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1)); 
-            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
+            // elephant
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1)); 
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
         }
         else if (animal == 2)
         {
             Debug.Log("Giraffe!");
             // giraffe
-            // possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-            // possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
         }
         else if (animal == 4)
         {
             Debug.Log("Chicken!");
             // chicken
 
-            // possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
-            // possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
-            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
-            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
-            // // diagonal directions	
-            // possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
-            // possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
+            // diagonal directions	
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
         }
 
         
         int n = 0;
         int length = possiblePositions.Count;
 
+        Debug.Log("We got this far");
         while (n<length)
         {
             Vector2 temp = possiblePositions[n];
@@ -219,7 +229,7 @@ public class GameManagerScript : MonoBehaviour
         possibilities = possiblePositions;
       
 
-
+        Debug.Log("We reached the end.");
        StartCoroutine("chooseCircle");
     
 
