@@ -15,6 +15,7 @@ public class GameManagerScript : MonoBehaviour
     private Vector2 newLocation;
     public List<Vector2> possibilities;
     public static GameManagerScript Instance;
+    public Tile tileScript;
 
 
     void Awake()
@@ -32,7 +33,8 @@ public class GameManagerScript : MonoBehaviour
             tile.transform.position = new Vector3(xcoord, 100f - 100f * (i + subtract), 15f);
 
             tile.transform.SetParent(canvas.transform, false);
-            Tile tileScript = tile.GetComponent<Tile>();
+            
+            tileScript = tile.GetComponent<Tile>();
 
 
             tileScript.owner = owner;
@@ -61,6 +63,9 @@ public class GameManagerScript : MonoBehaviour
             tile.transform.localScale = new Vector3(.9f, .9f, .9f);
 
             board[i + subtract, column] = tile;
+
+            tileScript.position = new Vector2(i + subtract, column);
+
             if (i == 2)
             {
                 xcoord = 150f;
@@ -69,7 +74,6 @@ public class GameManagerScript : MonoBehaviour
                 subtract = -3;
             }
 
-            tileScript.position = new Vector2(i + subtract, column);
 
         }
 
@@ -112,7 +116,9 @@ public class GameManagerScript : MonoBehaviour
 
         List<Vector2> possiblePositions = new List<Vector2>();
 
+        Debug.Log("Player:");
         Debug.Log(owner);
+        Debug.Log("Animal:");
         Debug.Log(animal);
 
         if (animal == 1)
@@ -188,6 +194,11 @@ public class GameManagerScript : MonoBehaviour
 
         possibilities = possiblePositions;
 
+        foreach (Vector2 vect in possibilities) {
+            Debug.Log("Vector:");
+            Debug.Log(vect);
+        }
+
 
         StartCoroutine("chooseCircle");
     
@@ -199,10 +210,9 @@ public class GameManagerScript : MonoBehaviour
         List<GameObject> circles = new List<GameObject>();
         foreach (Vector2 possibility in possibilities) {
             
-            Debug.Log("Eggs");
+            Debug.Log("Possibility Vect:");
             GameObject circle = Instantiate(circlePrefab);
-            Debug.Log(possibility.x);
-            Debug.Log(possibility.y);
+            Debug.Log(possibility);
             
             circle.transform.position = new Vector3(-50 + 100 * possibility.y, 100 - possibility.x * 100); // -  100x + 100
             circle.transform.SetParent(board[(int)possibility.x, (int)possibility.y].transform, false);

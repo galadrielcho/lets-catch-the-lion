@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Tile : MonoBehaviour
+public class Tile : MonoBehaviour, IPointerDownHandler
 {
     public int tiletype;
     public int owner;   
@@ -11,16 +12,13 @@ public class Tile : MonoBehaviour
     public int animal;
 
 
-    void OnMouseDown()
+    public void OnPointerDown(PointerEventData eventData)
     {
 
-        int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
+        Debug.Log(animal);
 
+        int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
         GameManagerScript.Instance.getNewLocation(tileAttributes);
         }
-
-
-
-
 
 }
