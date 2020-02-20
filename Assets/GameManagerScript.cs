@@ -108,11 +108,11 @@ public class GameManagerScript : MonoBehaviour
 
     
     
-    public void  getNewLocation(int[] tileAttributes)
+    public void  getNewLocation(float[] tileAttributes)
     {
 
-        int currentrow = (int)tileAttributes[0];
-        int currentcolumn = (int)tileAttributes[1];
+        float currentrow = tileAttributes[0];
+        float currentcolumn = tileAttributes[1];
         int animal = (int)tileAttributes[2];
         int owner = (int)tileAttributes[3];
 
@@ -125,30 +125,30 @@ public class GameManagerScript : MonoBehaviour
             // lion
             // add up, down, right, left
 
-            possiblePositions.Add(new Vector2((float)currentrow,(float) currentcolumn + 1));
-            possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn - 1));
-            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn));
-            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1f));
+            possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1f));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn));
             // // diagonal directions	
-            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn + 1));
-            possiblePositions.Add(new Vector2((float)currentrow + 1, (float)currentcolumn - 1));
-            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn + 1));
-            possiblePositions.Add(new Vector2((float)currentrow - 1, (float)currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow + 1, currentcolumn - 1));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn + 1));
+            possiblePositions.Add(new Vector2(currentrow - 1, currentcolumn - 1));
         }
         else if (animal == 3)
         {
             Debug.Log("Chick!");
-            // chick
-            if (owner == 0)
-            {
-                possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn + 1));
+            // // chick
+            // if (owner == 0)
+            // {
+            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn + 1));
 
-            }
+            // }
 
-            if (owner == 1)
-            {
-                possiblePositions.Add(new Vector2((float)currentrow, (float)currentcolumn - 1));
-            }
+            // if (owner == 1)
+            // {
+            //     possiblePositions.Add(new Vector2(currentrow, currentcolumn - 1));
+            // }
         }
 
         else if (animal == 0)
@@ -220,7 +220,7 @@ public class GameManagerScript : MonoBehaviour
       
 
 
-       //  StartCoroutine("chooseCircle");
+       StartCoroutine("chooseCircle");
     
 
 }

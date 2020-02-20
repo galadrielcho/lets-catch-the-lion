@@ -19,9 +19,8 @@ public class Tile : MonoBehaviour, IPointerDownHandler
 
         // int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
 
-        int x = (int)position.x;
 
-        int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner};
+        float[] tileAttributes = new float[4]{position.x, position.y, (float)animal, (float)owner};
 
         GameManagerScript.Instance.getNewLocation(tileAttributes);
         }
