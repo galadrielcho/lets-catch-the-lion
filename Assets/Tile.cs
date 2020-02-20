@@ -18,7 +18,7 @@ public class Tile : MonoBehaviour, IPointerDownHandler
 
 
         // int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
-
+        Debug.Log("Run");
 
         int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner};
 
@@ -27,8 +27,9 @@ public class Tile : MonoBehaviour, IPointerDownHandler
 
         }
         else {
+            GameManagerScript.Instance.board[(int)position.x, (int)position.y] = null;
 
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         }
 

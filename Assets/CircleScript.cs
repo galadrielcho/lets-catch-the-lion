@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CircleScript : MonoBehaviour
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+public class CircleScript : MonoBehaviour, IPointerDownHandler
 {
       
     public static bool wasClicked = false;
     public static Vector2 location;
 
-    void OnMouseDown() {
+    public void OnPointerDown(PointerEventData eventData)
+    {
 
         wasClicked = true;
 
-        location = new Vector2(transform.position.x + 50 / 100, (transform.position.y - 100) / -100);
+        location = new Vector2((transform.localPosition.y + 100)/100, (transform.localPosition.y +150) / 100);
+
+        GameManagerScript.newLocation = location;
     }
 }
