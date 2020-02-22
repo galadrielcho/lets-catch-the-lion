@@ -702,14 +702,12 @@ MonoBehaviour:
   circlePrefab: {fileID: 1435341432217492072, guid: b00570611dfb949489a05335d03edd59,
     type: 3}
   canvas: {fileID: 1333441262}
-  sprites:
-  - {fileID: 21300000, guid: fa2a6fbe4cb248248bac54816c94e864, type: 3}
-  - {fileID: 21300000, guid: 93ec15a8d8f096f4f9b1e29034e3a044, type: 3}
+  animalImages:
   - {fileID: 21300000, guid: a39e86e6e5c487a4099d66e06d124ca0, type: 3}
+  - {fileID: 21300000, guid: 93ec15a8d8f096f4f9b1e29034e3a044, type: 3}
+  - {fileID: 21300000, guid: fa2a6fbe4cb248248bac54816c94e864, type: 3}
   - {fileID: 21300000, guid: 1c6b9fcf7574b2845b29bc50199edc50, type: 3}
   - {fileID: 21300000, guid: 9a06568553f8fd446ac0c1b42346ed80, type: 3}
-  possibilities: []
-  tileScript: {fileID: 0}
   playerOne: {fileID: 2838400088521989245, guid: 7458e0690280d90458ce4cf0781ab5df,
     type: 3}
   playerTwo: {fileID: 3660123651861173687, guid: db386339200693b4fb546aabf70efbd7,

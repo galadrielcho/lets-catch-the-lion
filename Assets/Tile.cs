@@ -17,13 +17,18 @@ public class Tile : MonoBehaviour, IPointerDownHandler
 
 
 
-        // int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner };
         Debug.Log("Run");
 
         int[] tileAttributes = new int[4]{(int)position.x, (int)position.y, animal, owner};
 
         if (animal != 3) {
-            GameManagerScript.Instance.getNewLocation(tileAttributes);
+            if (GameManagerScript.turn == owner) {
+                
+                GameManagerScript.TileSelected = new Vector2((float)position.x, (float)position.y);
+
+                GameManagerScript.Instance.getNewLocation(tileAttributes);
+
+            }
 
         }
         else {

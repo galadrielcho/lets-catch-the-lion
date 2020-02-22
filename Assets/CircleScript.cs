@@ -15,7 +15,7 @@ public class CircleScript : MonoBehaviour, IPointerDownHandler
 
         wasClicked = true;
 
-        location = new Vector2((transform.localPosition.y + 100)/100, (transform.localPosition.y +150) / 100);
+        location = new Vector2(2 - (transform.localPosition.y + 100)/100, (transform.localPosition.x + 150 ) / 100);
 
         GameManagerScript.newLocation = location;
     }
